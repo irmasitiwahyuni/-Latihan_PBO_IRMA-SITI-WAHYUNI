@@ -34,12 +34,9 @@ class TiketIMAX extends Tiket
 
     // Implementasi abstract method
     public function hitungTotalHarga()
-    {
-        // Contoh biaya tambahan fasilitas IMAX
-        $biayaIMAX = 50000;
-
-        return $this->hargaDasarTiket + $biayaIMAX;
-    }
+{
+    return ($this->jumlah_kursi * $this->hargaDasarTiket) + 35000;
+}
 
 
     public function tampilkanInfoFasilitas()

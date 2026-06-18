@@ -33,13 +33,10 @@ class TiketVelvet extends Tiket
 
 
     // Implementasi abstract method
-    public function hitungTotalHarga()
-    {
-        // Contoh biaya tambahan layanan Velvet
-        $biayaVelvet = 75000;
-
-        return $this->hargaDasarTiket + $biayaVelvet;
-    }
+   public function hitungTotalHarga()
+{
+    return ($this->jumlah_kursi * $this->hargaDasarTiket) * 1.50;
+}
 
 
     public function tampilkanInfoFasilitas()
